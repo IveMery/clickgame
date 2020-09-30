@@ -20,14 +20,14 @@ player.onclick = () => {
 
 let restarTiempo = () => {
     tiempoDeJuego.innerHTML = "Tiempo:" + tiempo--;
-    if (tiempo == 0 && puntos >=30) {
+    if (tiempo == 0 && puntos >=45) {
         puntaje.textContent = "Ganaste!!"
         if(tiempo<=0){
             myStopFunction()
              tiempoDeJuego.textContent
              = "Tiempo: 0"
         }
-    } else if (tiempo == 0 && puntos < 30) {
+    } else if (tiempo == 0 && puntos < 45) {
         puntaje.textContent = "Lo Siento Perdiste "
         if(tiempo<=0){
             myStopFunction()
