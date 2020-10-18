@@ -4,7 +4,7 @@ const tiempoDeJuego = document.querySelector('#tiempo')
 
 let puntos = 0;
 let tiempo = 30;
-let necesarios =45 ;
+let necesarios =40 ;
 
 player.onclick = () => {
     puntaje.textContent = necesarios + " Clicks Necesarios " + "/" + " Clicks: " + puntos++;
@@ -20,14 +20,14 @@ player.onclick = () => {
 
 let restarTiempo = () => {
     tiempoDeJuego.innerHTML = "Tiempo:" + tiempo--;
-    if (tiempo == 0 && puntos >=45) {
+    if (tiempo == 0 && puntos >=40) {
         puntaje.textContent = "Ganaste!!"
         if(tiempo<=0){
             myStopFunction()
              tiempoDeJuego.textContent
              = "Tiempo: 0"
         }
-    } else if (tiempo == 0 && puntos < 45) {
+    } else if (tiempo == 0 && puntos < 40) {
         puntaje.textContent = "Lo Siento Perdiste "
         if(tiempo<=0){
             myStopFunction()
