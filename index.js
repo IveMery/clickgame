@@ -46,3 +46,13 @@ var myVar =setInterval(restarTiempo, 1000);
 function myStopFunction() {
     clearInterval(myVar);
   }
+  
+const btnReiniciar = document.getElementById('reiniciar')
+
+const reiniciarJuego =() =>{
+  window.location.reload()
+}
+
+btnReiniciar.onclick =() =>{
+  reiniciarJuego()
+}

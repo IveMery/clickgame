@@ -4,24 +4,26 @@
     font-family: sans-serif;
 }
 
-body{
+body {
     background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
 }
-h1{
+
+h1 {
     text-align: center;
 }
+
 .contenedor {
     padding: 0;
     margin: auto;
     width: 500px;
     height: 500px;
     background-color: bisque;
-    border: 8px dashed rgb(83, 68, 170);
+    border: 8px solid rgb(83, 68, 170);
 }
 
 .player {
     background-color: #900;
-    border: 4px dashed rgb(43, 27, 27);
+    border: 4px solid rgb(43, 27, 27);
     width: 50px;
     height: 50px;
     border-radius: 29px;
@@ -29,9 +31,10 @@ h1{
     transition: all 0.2s;
 }
 
-.player:active{
+.player:active {
     background-color: gold;
 }
+
 .contenedor_puntaje {
     margin: auto;
     width: 500px;
@@ -47,7 +50,7 @@ h1{
     padding: 10px 0;
 }
 
-.contenedor_tiempo{
+.contenedor_tiempo {
     margin: auto;
     width: 500px;
     height: 500px;
@@ -60,4 +63,17 @@ h1{
     font-size: 25px;
     text-align: center;
     padding: 10px 0;
+}
+
+.contenedorBtn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#reiniciar {
+    width: 120px;
+    height: 30px;
+    background-color: #444;
+    color: white;
+    border-radius: 10px;
 }
